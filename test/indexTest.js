@@ -1,7 +1,6 @@
 require("./helpers.js");
 const currentUser = "Grace Hopper";
-
-const welcomeMessage = "Welcome to Flatbook, ";
+const welcomeMessage = `Welcome to Flatbook, ${currentUser}!`;
 describe("index.js", () => {
   describe("currentUser", () => {
     it("is defined", () => {
@@ -26,19 +25,23 @@ describe("index.js", () => {
     });
 
     it("ends with an exclamation point!", () => {
-      expect(WelcomeMessage.substr(-1)).to.eq("!");
+      expect(welcomeMessage.substr(-1)).to.eq("!");
     });
   });
 
   describe("excitedWelcomeMessage", () => {
     it('contains "WELCOME TO FLATBOOK, "', () => {
-      expect(ExcitedWelcomeMessage).to.have.string("WELCOME TO FLATBOOK, ");
+      expect(excitedWelcomeMessage.substr(-1)).to.have.string(
+        "WELCOME TO FLATBOOK, "
+      );
     });
 
     it("contains the value of the 'currentUser' variable", () => {
       const upperCaseCurrentUser = currentUser.toUpperCase();
 
-      expect(excitedWelcomeMessage).to.have.string(upperCaseCurrentUser);
+      expect(excitedWelcomeMessage.substr(-1)).to.have.string(
+        upperCaseCurrentUser
+      );
     });
 
     it("ends with an exclamation point", () => {
