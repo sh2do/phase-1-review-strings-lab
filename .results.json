@@ -2,12 +2,12 @@
   "stats": {
     "suites": 5,
     "tests": 10,
-    "passes": 0,
+    "passes": 2,
     "pending": 0,
-    "failures": 10,
-    "start": "2021-01-26T15:53:19.476Z",
-    "end": "2021-01-26T15:53:20.212Z",
-    "duration": 736
+    "failures": 8,
+    "start": "2025-09-02T14:58:11.812Z",
+    "end": "2025-09-02T14:58:12.048Z",
+    "duration": 236
   },
   "tests": [
     {
@@ -15,29 +15,25 @@
       "fullTitle": "index.js currentUser is defined",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: currentUser is not defined\n    at Context.<anonymous> (test/indexTest.js:4:14)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "currentUser is not defined"
-      }
+      "err": {}
     },
     {
       "title": "contains \"Welcome to Flatbook, \"",
       "fullTitle": "index.js welcomeMessage contains \"Welcome to Flatbook, \"",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: welcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:11:14)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "welcomeMessage is not defined"
-      }
+      "err": {}
     },
     {
       "title": "contains the value of the 'currentUser' variable",
       "fullTitle": "index.js welcomeMessage contains the value of the 'currentUser' variable",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: welcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:15:14)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "welcomeMessage is not defined"
+        "message": "expected 'Welcome to Flatbook, ' to contain 'currentUser'",
+        "showDiff": false,
+        "actual": "Welcome to Flatbook, ",
+        "stack": "AssertionError: expected 'Welcome to Flatbook, ' to contain 'currentUser'\n    at Context.<anonymous> (test/indexTest.js:25:38)\n    at process.processImmediate (node:internal/timers:485:21)"
       }
     },
     {
@@ -46,8 +42,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: welcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:19:14)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "welcomeMessage is not defined"
+        "stack": "ReferenceError: WelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:29:14)\n    at process.processImmediate (node:internal/timers:485:21)",
+        "message": "WelcomeMessage is not defined"
       }
     },
     {
@@ -56,8 +52,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: excitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:25:14)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "excitedWelcomeMessage is not defined"
+        "stack": "ReferenceError: ExcitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:35:14)\n    at process.processImmediate (node:internal/timers:485:21)",
+        "message": "ExcitedWelcomeMessage is not defined"
       }
     },
     {
@@ -66,8 +62,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: currentUser is not defined\n    at Context.<anonymous> (test/indexTest.js:29:36)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "currentUser is not defined"
+        "stack": "ReferenceError: excitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:41:14)\n    at process.processImmediate (node:internal/timers:485:21)",
+        "message": "excitedWelcomeMessage is not defined"
       }
     },
     {
@@ -76,7 +72,7 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: excitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:35:14)\n    at processImmediate (internal/timers.js:461:21)",
+        "stack": "ReferenceError: excitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:45:14)\n    at process.processImmediate (node:internal/timers:485:21)",
         "message": "excitedWelcomeMessage is not defined"
       }
     },
@@ -86,7 +82,7 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:41:14)\n    at processImmediate (internal/timers.js:461:21)",
+        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:51:14)\n    at process.processImmediate (node:internal/timers:485:21)",
         "message": "shortGreeting is not defined"
       }
     },
@@ -96,8 +92,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: currentUser is not defined\n    at Context.<anonymous> (test/indexTest.js:45:28)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "currentUser is not defined"
+        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:58:14)\n    at process.processImmediate (node:internal/timers:485:21)",
+        "message": "shortGreeting is not defined"
       }
     },
     {
@@ -106,7 +102,7 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:53:14)\n    at processImmediate (internal/timers.js:461:21)",
+        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:63:14)\n    at process.processImmediate (node:internal/timers:485:21)",
         "message": "shortGreeting is not defined"
       }
     }
@@ -114,33 +110,15 @@
   "pending": [],
   "failures": [
     {
-      "title": "is defined",
-      "fullTitle": "index.js currentUser is defined",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: currentUser is not defined\n    at Context.<anonymous> (test/indexTest.js:4:14)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "currentUser is not defined"
-      }
-    },
-    {
-      "title": "contains \"Welcome to Flatbook, \"",
-      "fullTitle": "index.js welcomeMessage contains \"Welcome to Flatbook, \"",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: welcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:11:14)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "welcomeMessage is not defined"
-      }
-    },
-    {
       "title": "contains the value of the 'currentUser' variable",
       "fullTitle": "index.js welcomeMessage contains the value of the 'currentUser' variable",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: welcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:15:14)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "welcomeMessage is not defined"
+        "message": "expected 'Welcome to Flatbook, ' to contain 'currentUser'",
+        "showDiff": false,
+        "actual": "Welcome to Flatbook, ",
+        "stack": "AssertionError: expected 'Welcome to Flatbook, ' to contain 'currentUser'\n    at Context.<anonymous> (test/indexTest.js:25:38)\n    at process.processImmediate (node:internal/timers:485:21)"
       }
     },
     {
@@ -149,8 +127,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: welcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:19:14)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "welcomeMessage is not defined"
+        "stack": "ReferenceError: WelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:29:14)\n    at process.processImmediate (node:internal/timers:485:21)",
+        "message": "WelcomeMessage is not defined"
       }
     },
     {
@@ -159,8 +137,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: excitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:25:14)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "excitedWelcomeMessage is not defined"
+        "stack": "ReferenceError: ExcitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:35:14)\n    at process.processImmediate (node:internal/timers:485:21)",
+        "message": "ExcitedWelcomeMessage is not defined"
       }
     },
     {
@@ -169,8 +147,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: currentUser is not defined\n    at Context.<anonymous> (test/indexTest.js:29:36)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "currentUser is not defined"
+        "stack": "ReferenceError: excitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:41:14)\n    at process.processImmediate (node:internal/timers:485:21)",
+        "message": "excitedWelcomeMessage is not defined"
       }
     },
     {
@@ -179,7 +157,7 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: excitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:35:14)\n    at processImmediate (internal/timers.js:461:21)",
+        "stack": "ReferenceError: excitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:45:14)\n    at process.processImmediate (node:internal/timers:485:21)",
         "message": "excitedWelcomeMessage is not defined"
       }
     },
@@ -189,7 +167,7 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:41:14)\n    at processImmediate (internal/timers.js:461:21)",
+        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:51:14)\n    at process.processImmediate (node:internal/timers:485:21)",
         "message": "shortGreeting is not defined"
       }
     },
@@ -199,8 +177,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: currentUser is not defined\n    at Context.<anonymous> (test/indexTest.js:45:28)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "currentUser is not defined"
+        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:58:14)\n    at process.processImmediate (node:internal/timers:485:21)",
+        "message": "shortGreeting is not defined"
       }
     },
     {
@@ -209,10 +187,25 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:53:14)\n    at processImmediate (internal/timers.js:461:21)",
+        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:63:14)\n    at process.processImmediate (node:internal/timers:485:21)",
         "message": "shortGreeting is not defined"
       }
     }
   ],
-  "passes": []
+  "passes": [
+    {
+      "title": "is defined",
+      "fullTitle": "index.js currentUser is defined",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "contains \"Welcome to Flatbook, \"",
+      "fullTitle": "index.js welcomeMessage contains \"Welcome to Flatbook, \"",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
 }
